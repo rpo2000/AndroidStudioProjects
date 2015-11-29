@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="exp_listview" type="id" />
+    <item name="heading_item" type="id" />
+</resources>
