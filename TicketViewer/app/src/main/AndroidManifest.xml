@@ -33,22 +33,16 @@
             android:name=".ContactSupport"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
-        <application android:label="@string/app_name" android:icon="@drawable/icon">
+
             <activity android:name="MainActivity"
-                android:label="@string/app_name">
+                android:label="@string/app_name"
+                android:theme="@style/AppTheme.NoActionBar">
                 <intent-filter>
                     <action android:name="android.intent.action.MAIN" />
                     <category android:name="android.intent.category.LAUNCHER" />
                 </intent-filter>
             </activity>
-        </application>
-
-        <activity
-            android:name=".UserMainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".UserMainActivity"
             android:label="Main Activity"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
