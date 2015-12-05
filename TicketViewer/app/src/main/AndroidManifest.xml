@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="taylormarkryan.ticketviewer" >
+    package="com.example.taylormarkryan.ticketviewer">
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
@@ -17,63 +17,45 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/utts"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
-
+        android:theme="@style/AppTheme">
         <activity
-            android:name=".ProfileActivity"
+            android:name=".Questions"
             android:label="@string/app_name"
-            android:parentActivityName=".UserMainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="taylormarkryan.ticketviewer.UserMainActivity" />
-
         <activity
-            android:name=".ContactSupportActivity"
-            android:label="@string/title_activity_contact_support"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".CreateTicketActivity" />
-        <activity android:name=".ViewMyTicketsActivity" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".Profile"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactSupport"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <application android:label="@string/app_name" android:icon="@drawable/icon">
+            <activity android:name="MainActivity"
+                android:label="@string/app_name">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        </application>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".UserMainActivity"
-            android:label="@string/title_activity_user_main"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-
-        <activity
-            android:name=".DataProvider"
-            android:label="DataProvider"
-            android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name=".MainActivity"
+            android:label="Main Activity"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
-        <activity android:name="taylormarkryan.ticketviewer.FrequentlyAskedQuestions"
-            android:label="@string/title_activity_frequently_asked_questions"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:parentActivityName="taylormarkryan.ticketviewer.UserMainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                android:value="taylormarkryan.ticketviewer.UserMainActivity" />
+        <activity android:name=".DataProvider"
+            android:label="Data Provider"
+            android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 
 </manifest>
-
-
-
-
-
-
-
