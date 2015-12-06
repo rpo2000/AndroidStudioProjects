@@ -1,26 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainToolbarActivity">
-    <item android:id="@+id/action_settings" android:title="Settings"
-        android:orderInCategory="100" app:showAsAction="never"/>
-    <item
-        android:id="@+id/action_search"
-        android:orderInCategory="200"
-        android:title="Search"
-        android:icon="@drawable/backbutton"
-        app:showAsAction="ifRoom">
-
-    </item>
-
-    <item
-        android:id="@+id/action_user"
-        android:orderInCategory="300"
-        android:title="Search"
-        android:icon="@drawable/backbutton"
-        app:showAsAction="ifRoom">
-
-    </item>
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="taylormarkryan.ticketviewer.LoginActivity">
+      <item
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:title="Settings"
+            app:showAsAction="never" />
 
 
 </menu>
